@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<nav class="nav">
+			<img src="resources/images/logo.png" width="auto" height="100em">
+			<a class="nav-item" href="#">Начало</a>
+			<a class="nav-item" href="#">Продукти</a>
+			<a class="nav-item" href="#">Контакти</a>
+			<a class="nav-item" href="#">Сервизи</a>
+		</nav>
+		<nav class="mobileNav">
+			<img src="resources/images/logo.png" width="auto" height="100em">
+			<button onclick="Show()" class="rightbtn" >
+				<div class="mobileNav-line"></div>
+				<div class="mobileNav-line"></div>
+    			<div class="mobileNav-line"></div>
+    		</button>
+    		<div id="dropdown" class="dropdown-class">
+    			<a href="#">Начало</a>
+				<a href="#">Продукти</a>
+				<a href="#">Контакти</a>
+				<a href="#">Сервизи</a>
+    		</div>
+		</nav>
+		<header>
+			<img src="resources/images/banner.jpg" width="80%" height="auto">
+		</header>
+		<main class="main-container">
+			<h1>Най-продавани настолни компютри</h1>
+			<section class="best-sellers">
+				<div class="product-card">
+					<img src="resources/images/product_1.png" width="400px" height="250px">
+					<div class="product_name">
+						Moster Killer
+					</div>
+					<div class="product_description">
+						Дънна платка: MSI MPG Z490 GAMING PLUS<br />
+						Централен процесор: i9-10900KF<br />
+						Оперативна памет(RAM): 16GB (2x8GB) DDR4 3600MHz Corsair Vengeance RGB PRO SL<br />
+						Видео карта: EVGA GeForce GTX 3060 12 GB VRAM<br />
+						Място за съхранение: 1x1TB Crucial P2 M.2 NVMe<br />
+						Кутия: MSI MPG SEKIRA 100R
+					</div>
+					<div class="product_price">
+						3999 лв.(с ДДС)
+					</div>
+					<a href="#">
+						<button class="product-btn">
+							Виж още
+						</button>
+					</a>
+				</div>
+				<div class="product-card">
+					<img src="resources/images/product_2.png" width="400px" height="250px">
+					<div class="product_name">
+						Moster Killer
+					</div>
+					<div class="product_description">
+						Дънна платка: MSI MAG X570S TORPEDO MAX<br />
+						Централен процесор: AMD Ryzen 5 5600X<br />
+						Оперативна памет(RAM): 16GB (2x8GB) DDR4 3600MHz Corsair Vengeance RGB PRO SL<br />
+						Видео карта: EVGA GeForce RTX 2060 KO ULTRA GAMING 6GB<br />
+						Място за съхранение: 1x250GB Crucial P2 M.2 NVMe<br />
+						Кутия: Cougar MX440 Mesh RGB
+					</div>
+					<div class="product_price">
+						2599 лв.(с ДДС)
+					</div>
+					<a href="#">
+						<button class="product-btn">
+							Виж още
+						</button>
+					</a>
+				</div>
+				<div class="product-card">
+					<img src="resources/images/product_3.png" width="400px" height="250px">
+					<div class="product_name">
+						Moster Killer
+					</div>
+					<div class="product_description">
+						Дънна платка: MSI MAG B550M MORTAR<br />
+						Централен процесор: AMD Ryzen 5 5600G<br />
+						Оперативна памет(RAM): 16GB (2x 8GB) DDR4 3600MHz Corsair Vengeance RGB PRO SL<br />
+						Видео карта: MSI AMD Radeon RX 6600 XT MECH 2X 8G OC<br />
+						Място за съхранение: 1x250GB Crucial P2 M.2 NVMe<br />
+						Кутия: be quiet! Pure Base 500 DX | White
+					</div>
+					<div class="product_price">
+						2499 лв.(с ДДС)
+					</div>
+					<a href="#">
+						<button class="product-btn">
+							Виж още
+						</button>
+					</a>
+				</div>
+				<div class="product-card">
+					<img src="resources/images/product_4.png" width="400px" height="250px">
+					<div class="product_name">
+						Dominator Black
+					</div>
+					<div class="product_description">
+						Дънна платка: MSI MAG X570S TORPEDO MAX<br />
+						Централен процесор: AMD Ryzen 5 5600X<br />
+						Оперативна памет(RAM): 16GB (2x 8GB) DDR4 3600MHz Corsair Vengeance RGB PRO SL<br />
+						Видео карта: MSI AMD Radeon RX 6600 MECH 2X 8G<br />
+						Място за съхранение: 1x500GB Crucial P2 M.2 NVMe<br />
+						Кутия: In Win 101 Black
+					</div>
+					<div class="product_price">
+						2249 лв.(с ДДС)
+					</div>
+					<a href="#">
+						<button class="product-btn">
+							Виж още
+						</button>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+				<div class="footer-element">
+					<a href="#">Контакти</a><br />
+					<a href="#">За нас</a><br />
+					<a href="#">Общи условия</a><br />
+					<a href="#">Политика за поверителност</a><br />
+				</div>
+				<div class="footer-element">
+					<a href="#">Плащане</a><br />
+					<a href="#">Доставка</a><br />
+					<a href="#">Връщане на пратка</a><br />
+					<a href="#">Често задавани въпроси</a><br />
+				</div>
+				<div class="footer-element">
+					<p>Последвайте ни:</p><br />
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+		</footer>
+		<script type="text/javascript">
+			function Show() 
+			{
+			  document.getElementById("dropdown").style.display = "block";
+			}
+			window.onclick = function(event) 
+			{
+				if (!event.target.matches('.rightbtn')) 
+			  	{
+			    	var dropdowns = document.getElementsByClassName("dropdown-class");
+			    	var i;
+			    	for (i = 0; i < dropdowns.length; i++) 
+			    	{
+						var openDropdown = dropdowns[i];
+						if (openDropdown.style.display == "block") 
+						{
+							openDropdown.style.display = "none";
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+	
+</html>

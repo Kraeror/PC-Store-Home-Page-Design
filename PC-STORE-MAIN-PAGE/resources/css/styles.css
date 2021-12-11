@@ -1,0 +1,318 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #243a47;
+	min-height:100%;
+	position:relative;
+}
+.nav
+{
+	align-items:center;
+	background-color: #142129;
+	display: flex;
+	justify-content: center;
+}
+
+.mobileNav
+{
+	display: none;
+}
+
+.nav .nav-item
+{
+	background-color: #243a47;
+	border: 1px solid #66a2ba;
+	color: #66a2ba;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 1.3em 2em;
+}
+
+.nav a:hover
+{
+	background-color: #66a2ba;
+	color: #243a47;
+	border-color: #243a47;
+}
+
+header img
+{
+	max-width: 2000px;
+	margin: 3em auto; 
+	display: block;
+	border-radius: 3em;
+}
+
+.main-container
+{
+	background-color: #243a47;
+	width: 80%;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+
+.main-container h1
+{
+	text-align: center;
+	color: #ffeded;
+}
+
+.best-sellers
+{
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+	background-color: #badaff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product-card
+{
+	background-color: #243a47;
+	width: calc(25% - 40px);
+	margin: 20px;
+	max-height: 50rem;
+	border-radius: 3em;
+	align-items: center;
+}
+
+.product-card img
+{
+	display: block;
+	margin: 15px auto;
+	width: 100%;
+	height: 30%;
+}
+
+.product-card .product_name
+{
+	font-size: 24px;
+	padding: 23px;
+	font-weight: bold;
+	color: white;
+}
+
+.product-card .product_description
+{
+	margin: 1em;
+	color: white;
+	max-height: 10.5em;
+	overflow: hidden;
+}
+
+.product-card .product_price
+{
+	margin: 1em;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.product-card .product-btn
+{
+	display: block;
+	background-color: #badaff;
+	font-size: 32px;
+	color: #243a47;
+	padding: 13px;
+	margin: 0 auto;
+	border-radius: 1em;
+	border: 3px white solid;
+}
+
+.product-card a
+{
+	text-decoration: none;
+}
+
+.product-card .product-btn:hover
+{
+	background-color: #243a47;
+	color: white;
+	cursor: pointer;
+	border: 3px white solid;
+}
+
+footer
+{
+	margin-top: 3em;
+	background-color: #1b2c36;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+footer .footer-element
+{
+	padding: 0 20px;
+	dispaly: block;
+	color: white;
+}
+
+footer .footer-element a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.fa
+{
+	padding: 13px;
+	border-radius: 50%;
+}
+
+.fa.fa-facebook
+{
+	background-color: #3B5998;
+}
+
+.fa.fa-linkedin
+{
+	background-color: #007bb5;
+}
+
+.fa.fa-instagram
+{
+	background-color: #125688;
+}
+
+@media only screen and (max-width: 1400px)
+{
+	.product-card
+	{
+		background-color: #243a47;
+		width: calc(33.333% - 40px);
+		margin: 20px;
+		border-radius: 3em;
+		position: relative;
+	}
+	.product-card img
+	{
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1200px)
+{
+	.product-card
+	{
+		background-color: #243a47;
+		width: calc(50% - 40px);
+		margin: 20px;
+		border-radius: 3em;
+		position: relative;
+	}
+	.product-card img
+	{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.product-card
+	{
+		background-color: #243a47;
+		width: calc(100% - 30px);
+		border-radius: 3em;
+		position: relative;
+	}
+	.product-card img
+	{
+		width: 80%;
+	}
+	.nav
+	{
+		display: none;
+	}
+	.mobileNav
+	{
+		position: relative;
+		background-color: #142129;
+		display: inline-block;
+		width: 100%;
+	}
+	.mobileNav img
+	{
+		height: 120px;
+		float: left;
+	}
+	.rightbtn
+	{
+		display: block;
+		background-color: #243a47;
+		float: right;
+		color: #66a2ba;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+		padding: calc((120px - 35px) / 2) 2em;
+		border: 1px solid #66a2ba;
+		margin-right: 3px;
+	}
+
+	.rightbtn:hover
+	{
+		background-color: #66a2ba;
+		color: #243a47;
+		border-color: #243a47;
+	}
+
+	.rightbtn:hover .mobileNav-line
+	{
+		background-color: #243a47; 
+	}
+
+	.mobileNav-line
+	{
+		width: 35px;
+		height: 5px;
+		background-color: #badaff;
+		margin: 5px 0;
+	}
+
+	.dropdown-class
+	{
+		background-color: #243a47;
+		display: none;
+		position: absolute;
+		right: 0px;
+		top: 120px;
+		overflow: auto;
+		z-index: 1;
+		margin-right: 3px;
+	}
+	.dropdown-class a
+	{
+		text-decoration: none;
+		text-align: center;
+		border: 1px white solid;
+		display: block;
+		padding: 10px;
+		width: 117px;
+		border: 1px solid #66a2ba;
+		color: #66a2ba;
+	}
+	.dropdown-class a:hover
+	{
+		background-color: #66a2ba;
+		color: #243a47;
+		border-color: #243a47;
+	}
+}
+@media only screen and (max-width:  651px)
+{
+	.fa.fa-instagram
+	{
+		margin-top: 5px;
+	}
+}
